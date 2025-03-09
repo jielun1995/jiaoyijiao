@@ -1,0 +1,37 @@
+<view class="container">
+  <view class="game-container">
+    <!-- 分数显示 -->
+    <view class="score-display">得分: {{score}}</view>
+    
+    <!-- 开始按钮 -->
+    <button wx:if="{{!isGameStarted}}" class="start-btn" bindtap="startGame">
+      开始游戏
+    </button>
+
+    <!-- 游戏内容 -->
+    <block wx:if="{{isGameStarted}}">
+      <!-- 声音指示器 -->
+      <view class="voice-meter">
+        <view class="meter-bar">
+          <view class="meter-fill" style="height: {{voiceMeter}}%"></view>
+        </view>
+      </view>
+
+      <!-- 小鸟 -->
+      <view class="bird" style="top: {{birdY}}rpx">
+      </view>
+      
+      <!-- 障碍物 -->
+      <block wx:for="{{obstacles}}" wx:key="index">
+        <view class="obstacle" 
+              style="left: {{item.x}}rpx; top: {{item.y}}rpx; width: {{item.width}}rpx; height: {{item.height}}rpx">
+        </view>
+      </block>
+
+      <!-- 游戏说明 -->
+      <view class="instruction">
+        发出声音控制小鸟飞行高度
+      </view>
+    </block>
+  </view>
+</view>

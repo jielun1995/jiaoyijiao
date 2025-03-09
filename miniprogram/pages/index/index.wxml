@@ -1,0 +1,13 @@
+<view class="container">
+  <view class="title">Voice Jump</view>
+  <view class="btn-group">
+    <button class="btn start-btn" bindtap="startGame">开始游戏</button>
+    <button class="btn rank-btn" bindtap="goToRank">排行榜</button>
+  </view>
+  <view class="tips">
+    <text>游戏说明：</text>
+    <text>1. 按住按钮说话</text>
+    <text>2. 声音越大跳得越远</text>
+    <text>3. 跳到目标位置得分</text>
+  </view>
+</view>

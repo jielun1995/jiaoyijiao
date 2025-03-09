@@ -1,0 +1,10 @@
+<view class="container">
+  <view class="rank-list">
+    <view class="rank-item" wx:for="{{rankList}}" wx:key="index">
+      <view class="rank-number">{{index + 1}}</view>
+      <image class="avatar" src="{{item.avatarUrl}}"></image>
+      <view class="nickname">{{item.nickName}}</view>
+      <view class="score">{{item.score}}</view>
+    </view>
+  </view>
+</view>

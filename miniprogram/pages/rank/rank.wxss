@@ -1,0 +1,38 @@
+.rank-list {
+  padding: 20rpx;
+}
+
+.rank-item {
+  display: flex;
+  align-items: center;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0,0,0,0.1);
+}
+
+.rank-number {
+  width: 60rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #666;
+}
+
+.avatar {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+
+.nickname {
+  flex: 1;
+  font-size: 28rpx;
+}
+
+.score {
+  font-size: 32rpx;
+  color: #ff4081;
+  font-weight: bold;
+}

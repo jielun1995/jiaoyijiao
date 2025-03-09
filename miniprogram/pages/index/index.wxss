@@ -1,0 +1,56 @@
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0;
+}
+
+.title {
+  font-size: 48rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 100rpx;
+}
+
+.btn-group {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 30rpx;
+}
+
+.btn {
+  width: 100% !important;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-radius: 50rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.start-btn {
+  background: #2196f3;
+  color: white;
+}
+
+.rank-btn {
+  background: #ff4081;
+  color: white;
+}
+
+.tips {
+  margin-top: 100rpx;
+  padding: 30rpx;
+  background: white;
+  border-radius: 20rpx;
+  width: 80%;
+}
+
+.tips text {
+  display: block;
+  font-size: 28rpx;
+  color: #666;
+  margin: 10rpx 0;
+}
